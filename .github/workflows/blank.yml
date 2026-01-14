@@ -17,11 +17,8 @@ jobs:
       with:
         node-version: 18.x
         
-    - run: cd app && npm install
-      working-directory: ./react-app
+    - run: npm install
     
     - run: npm run build
-      working-directory: ./react-app
     
     - run: npm test
-      working-directory: ./react-app
